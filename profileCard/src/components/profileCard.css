@@ -2,7 +2,7 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
-    max-width: 300px;
+    max-width: 500px;
     margin: 16px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -14,8 +14,8 @@
   }
   
   .profile-picture {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 16px;
@@ -27,4 +27,12 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-left: 200px;
+  }
+  .bio{
+    color: rgb(59, 36, 146);
+  }
+  .name{
+    color: rgb(163, 28, 145);
+    font-family: 'Times New Roman', Times, serif;
   }

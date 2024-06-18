@@ -7,10 +7,25 @@
 } */
 
 .app{
-  margin: auto;
+  /* margin-left: 300px; */
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.main-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%
 }
