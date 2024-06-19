@@ -1,17 +1,32 @@
 import './joke.scss'
+import { JokeData } from '../types/alltypes'
 
-export const Joke = () => {
 
-    const data = {
-        ID: 1,
-        joke: 'Why did the chicken cross the road?',
-        rating: 4
-    }
+
+
+export const Joke = (data:JokeData) => {
+     const ratingFun = (rating: number) => {
+        if (rating === 1) {
+          return <span>★☆☆☆☆</span>
+        } else if (rating === 2) {
+          return <span>★★☆☆☆</span>
+        } else if (rating === 3) {
+          return <span>★★★☆☆</span>
+        } else if (rating === 4) {
+          return <span>★★★★☆</span>
+        } else if (rating === 5) {
+          return <span>★★★★★</span>
+        } else {
+          return <span>☆☆☆☆☆</span>
+        }
+    
+      }
+    
   return (
     <div className="joke">
-        <h2 className='id'>{data.ID}</h2>
+        <h2 className='id'>{data.id}</h2>
         <p className='data'>{data.joke}</p>
-        <p className='rating'>Rating: {data.rating}</p>
+        <p className='rating'>Rating: {ratingFun(data.rating)}</p>
     </div>
   )
 }
