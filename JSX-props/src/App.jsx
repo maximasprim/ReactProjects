@@ -1,36 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Personal from "./components/Personal";
+import Placeholder from "./components/Placeholder";
 
 function App() {
-  
-  const name ="maximas"
-  const moreDetails ={ 
-    age:21,
+  const name = "maximas";
+  const moreDetails = {
+    age: 21,
     country: "India",
-    height: "5.7"
+    height: "5.7",
+  };
+  let islogged = false;
+  let langs = ["TypeScript", "Javascript", "C#", "Python"];
+  function getTodaysDate() {
+    return new Date().toLocaleDateString();
   }
-  let islogged = false 
-
   return (
     <>
-    <h2>Heyy,my name is { name }</h2>
-    <p>My height is {moreDetails.height}</p>
-    <p> {islogged ? " im logged in": "im not logged in"}</p>
-    <p> {moreDetails.age > 18 ? "im an adult" : "im a minor"}</p>
-    <p> my country is {moreDetails.country}</p>
-
-    <div>Favourite programming languages</div>
-
-    <ul style={ {listStyle:'none',backgroundColor: 'lightgreen'}}>
-      <li>Typescript</li>
-      <li>Javascript</li>
-      <li>C#</li>
-      <li>Python</li>
-    </ul>
+      to day is : {getTodaysDate()}
+      
+      <Placeholder w={600} h={400} />
+      {/* <Placeholder w={400} h={200} />
+      <Placeholder w={200} h={100} /> */}
+      <Personal
+        name={name}
+        moreDetails={moreDetails}
+        islogged={islogged}
+        langs={langs}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
