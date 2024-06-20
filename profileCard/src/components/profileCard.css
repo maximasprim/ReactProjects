@@ -3,7 +3,7 @@
     border-radius: 8px;
     padding: 16px;
     max-width: 500px;
-    margin: 16px auto;
+    /* margin: 16px auto; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #807979;
@@ -11,6 +11,12 @@
     justify-content: center;
     width: 100%;
     
+    
+  }
+
+  .profile-card:hover {
+    transform: scale(1.08);
+    background-color: rgb(150, 77, 77);
   }
   
   .profile-picture {
@@ -23,12 +29,7 @@
   body{
     background-color: rgb(76, 94, 88);
   }
-  .main{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 200px;
-  }
+  
   .bio{
     color: rgb(59, 36, 146);
   }

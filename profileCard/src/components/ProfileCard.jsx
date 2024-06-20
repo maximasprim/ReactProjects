@@ -12,7 +12,7 @@ const ProfileCard = ({ name, age, profilePicture, bio }) => {
         />
         <h2 className="name"><span style={{color: "white"}}>Name:</span> {name}</h2>
         <p>Age: {age}</p>
-        <p className="bio"><strong>My Bio:</strong> {bio}</p>
+        <p className="bio"><strong>My Bio:  </strong><span style={{color: 'orange'}} >{bio}</span></p>
       </div>
     </div>
   );
